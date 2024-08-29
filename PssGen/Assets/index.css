@@ -1,0 +1,19 @@
+*,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#campo-senha {
+  max-width: 600px;
+  max-height: 800px;
+}
+
+#gerador-senha-campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  gap: 1rem;
+}

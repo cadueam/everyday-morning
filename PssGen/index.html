@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta name="description" content="password-generator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Assets/index.css" />
+  </head>
+  <body>
+    <!-- TODO: INFORMAÇÕES 
+     TEXTO COMO QUER A SENHA 
+     TAMANHO SENHA > 13 < 18 (VALUE)
+     CARACTERES ESPECIAIS
+     CAMPO DE INPUT + COPIAR SENHA
+     BOTÃO GERAR SENHA
+     
+     -->
+
+    <section id="campo-senha">
+      <div id="gerador-senha-campo">
+        <h1>Gerador de Senha</h1>
+        <div id="pssw-length">
+          <label for="tamanho-senha" id="size">Tamanho</label>
+          <input type="range" id="tamanho-senha" min="13" max="20" value="15" />
+        </div>
+        <div id="specialz">
+          <input type="checkbox" id="special" />
+          <label for="special"> Special Characteres</label>
+        </div>
+        <input type="text" id="pss-gen" />
+        <button id="start-btn">Generate Password</button>
+      </div>
+    </section>
+    <script src="./Assets/index.js"></script>
+  </body>
+</html>
